@@ -1,9 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -79,7 +74,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center flex-wrap">
           <h1 className="md:text-5xl text-3xl text-center font-bold text-black w-full my-5">
-            NÃO PERCA TEMPO E ADQUIRA AGORA PELO
+            NÃO PERCA TEMPO E ADQUIRA AGORA PELO{" "}
             <span className="text-[#03A00A]">VALOR PROMOCIONAL DE R$47,00</span>
           </h1>
           <a
