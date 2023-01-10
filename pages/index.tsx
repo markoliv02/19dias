@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -13,6 +14,19 @@ export default function Home() {
         <meta name="author" content="Marcos Oliveira " />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-RTJYKNW2PL"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RTJYKNW2PL');
+          
+          `}
+      </Script>
       <main className="container mx-auto">
         <div className="flex justify-center flex-wrap p-5">
           <h1 className="md:text-5xl text-3xl text-center font-bold text-[#FF0000] w-full">
